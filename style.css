@@ -1,0 +1,626 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family:"poppins", sans-serif;
+}
+/* 
+ body {
+            background-color: rgba(255, 192, 203, 0.476);
+            
+ }
+
+ .container {
+    background-color: rgba(255, 192, 203, 0.476);
+ } */
+
+/* 
+ body{
+    background: #fff7f8;
+}
+
+main{
+    box-shadow: 0 0 50px rgba(255, 105, 180, 0.25);
+} */
+/* 
+main{
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08),
+        0 20px 60px rgba(255, 182, 193, 0.25);
+} */
+
+
+/* this one is best */
+
+.other-section,
+.hero-section,
+footer{
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+:root {
+    --orange-clr: #e96c28;
+    --white-clr: #FFF;
+    --black-clr: #000;
+    --gray-clr: #636363;
+    --light-gray: #c4c4c4;
+    --dawn-pink: #fae7fa;
+    --frosed-mint: #DCFEF9;
+} 
+
+.other-section,
+.hero-section,
+footer{
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.15),
+        0 20px 50px rgba(0,0,0,0.20);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.container {
+      color: white;
+
+}
+
+body {
+      background-color: rgb(0, 0, 0);
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 3rem;
+    color: orange;
+    /* margin-left: 20px; */
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: rgb(137, 7, 7);
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    
+}
+
+li {
+    list-style: none;
+}
+
+.navlinks {
+    color: black;
+    font-weight: 700;
+
+}
+
+.active {
+    color: var(--white-clr);
+}
+
+.active,
+.navlinks:hover {
+    color: orange;
+}
+
+.icons-link {
+    background-color: orange;
+    width: 2.3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-left: -.1rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.3rem;
+    transition: .3s ease-in-out;
+}
+
+.icons-link:hover {
+    transform: translatey(-10%);
+}
+
+.fa-solid,
+.fa-brands {
+    font-size: 1.1rem;
+    color: white;
+}
+
+header {
+    /* background: pink; */
+    height: 10vh;
+    margin-bottom: 70px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* background: yellow; */
+    padding: 5rem;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.burger {
+    background: black;
+    width: 2.3rem;
+    height: .2rem;
+    margin: .3rem;
+    border-radius: 3rem;
+}
+
+
+
+/* -----------------------Section-part-------------------------- */
+
+
+
+/*---------------------- hero section------------------------------*/
+
+.hero-section {
+    height: 487px;
+    /* width: 100%; */
+    /* background: gold; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.content {
+    /* background: green; */
+    flex: 1;
+}
+
+.image-container {
+    /* background:blue; */
+    flex: 1;
+    position: relative;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background:orange;
+    width: 35rem;
+    height: 30vh;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(100px);
+}
+
+img {
+    max-width: 250%;
+    height: auto;
+}
+
+.imi:hover {
+    transform:scale(1.30);
+    transition: transform 0.4s;
+    
+   
+}
+
+.imi:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-top: 1rem;
+}
+
+.watch  {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+p {
+    color:gray;
+    margin-block-start: 1.5rem;
+    max-width: 500px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+button,
+.form-btn{
+    background: orange;
+    color: white;
+    border: 1.5px solid orange;
+    padding: .55rem 1.5rem;
+    border-radius: 5rem;
+    margin-top: 20px;
+}
+
+[data-type='bordered-btn'] {
+    background: transparent;
+    color: orange;
+}
+
+
+/* ------------------------store section---------------- */
+
+
+
+
+.other-section {
+    padding-block: .5rem;
+}
+
+.row-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-left: 20px;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+.im {
+    height: 375px;
+    width: 100%;
+}
+
+.im:hover{
+    filter: brightness(120%);
+}
+.text {
+    text-align: center;
+    max-width: 600px;
+    margin-block: .5rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.card {
+    background: rgba(255, 217, 0, 0.383);
+    width: 15rem;
+    text-align: center;
+    border-radius: 1rem;
+    padding-block: 2.5rem;
+    box-shadow: black
+    0px 1px 5px;
+
+}
+
+.card:hover {
+    box-shadow: rgba(93, 50, 84, 0.935)
+    0px 13px 27px -5px,
+    0px 1px 16px -8px;
+    
+}
+
+h4 {
+    font-weight: 800;
+}
+
+
+/* ----------------About Section------------ */
+
+
+
+
+.imm {
+    height: 160px;
+    width: auto;
+}
+
+
+
+h4 {
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.app-img {
+    display: flex;
+    gap: 1rem;
+    height: 4.5rem;
+    width: 100%;
+}
+
+.ii {
+    height: 370px;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.ii:hover {
+    transform:scale(1.30);
+    transition: transform 0.4s;
+   
+}
+
+.ii:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* --------------Best Sell food section----------------- */
+
+
+.rating img{
+    height: 25px;
+    width: auto;
+}
+
+
+.rating .dollar {
+    color: red;
+    display: flex;
+}
+
+.dollar{
+    margin-right: 440px;
+    margin-top: 20px;
+    display: flex;
+}
+
+/* -------------------News letter------------------ */
+
+ .form-container {
+    margin-top: 1.2rem;
+    border: 0.2rem solid orange;
+    height: 3.5rem;
+    border-radius: 5rem;
+    padding: .25rem;
+}
+
+
+
+/* input[type='email'] {
+    height: 100%;
+    border-radius: 5rem 0 0 5rem;
+    border: none;
+    font-size: 1rem;
+    padding-left: 1rem;
+}  */
+/* 
+input:focus {
+    outline: none;
+} */
+
+
+.form-container{
+    width: 355px;
+    height: 55px;
+    border: 2px solid orange;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(202, 190, 190);
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+#email{
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.form-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    margin-right: 50px;
+    
+    height: 46px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 25px;
+    background: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    background: #ff8c00;
+}
+
+/* ----------------footer-section-------------- */
+
+.footer-links {
+    font-size: .95rem;
+    color: var(--gray-clr);
+}
+
+.footer-list li {
+    margin-block: .5rem;
+}
+
+.tet {
+    max-width: 450px;
+    margin-top: 10px;
+}
+/* 
+.column {
+    align-items: left;
+    text-align: left;
+}
+
+.column ul li {
+    
+    text-align: center;
+    align-items: left;
+} */
+
+/* .column {
+    text-align: left;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    text-align: left;
+    margin-bottom: 10px;
+} */
+
+/* footer.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer.contact-list li i {
+    width: 20px;
+    text-align: center;
+
+} */
+
+
+/* Footer ke sabhi column left align */
+footer .column {
+    text-align: left !important;
+}
+
+/* Footer ki sabhi lists ka extra padding hatao */
+footer .footer-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+
+footer .footer-list li {
+    text-align: left !important;
+    margin-bottom: 10px;
+}
+
+/* Menu heading aur list ke beech gap */
+footer .column h4 {
+    text-align: left !important;
+    margin-bottom: 15px;
+}
+
+
+
+/* Contact section me icon aur text ek line me rahe */
+
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-list li i {
+    width: 18px;
+    margin-top: 3px;
+    color: #ffa500;
+}
+
+.column h4.c {
+    margin-bottom: 35px;
+}
+
+.icons {
+    margin-top: 35px;
+}
+
+.footer-links:hover {
+    background-color: orange;
+}
+
+
+/*---------------------------------- conact mail iconss-------------------- */
+
+
+.phone-icon,
+.mail-icon,
+.location-icon{
+    color: orange;
+    font-size: 18px;
+}
+
+
+footer .card-container {
+    justify-content: space-between;
+}
+
+
+.line {
+    width: 100%;
+    height: .09rem;
+    background: var(--light-gray);
+    margin-block: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.line h4 {
+    text-align: center;
+    align-items: center;
+    /* margin-right: 100px; */
+    margin-top: 50px;
+}
+
+/* // to show big text for food containr// */
+
+
+.column-container h2 {
+    color: white;
+}
